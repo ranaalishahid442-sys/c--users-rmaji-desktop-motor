@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKELO.PK | The Armory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,800;1,600&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="shop-page">
+
+    <!-- Transition Overlay -->
+    <div class="transition-overlay">
+        <div class="transition-wipe"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Bikelo.pk" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="icon-btn search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg></a>
+                <a href="cart.html" class="icon-btn cart-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Speedway Full-Width Banner -->
+    <header class="shop-hero speedway-banner">
+        <div class="banner-content">
+            <h1 class="hero-title">THE ARMORY</h1>
+            <p class="hero-description">Performance Upgrades</p>
+        </div>
+    </header>
+
+    <!-- Shop Content (Sidebar + Grid) -->
+    <section class="shop-content-section">
+        <div class="container shop-layout">
+
+            <!-- Sidebar "Pit Lane" -->
+            <aside class="shop-sidebar">
+                <div class="sidebar-header">
+                    <h3>PIT LANE</h3>
+                    <div class="divider"></div>
+                </div>
+                <ul class="category-list">
+                    <li><a href="#engine" class="active">Engine & Drivetrain</a></li>
+                    <li><a href="#exhaust">Exhaust Systems</a></li>
+                    <li><a href="#brakes">Brakes & Suspension</a></li>
+                    <li><a href="#tires">Tires & Wheels</a></li>
+                    <li><a href="#body">Body & Frame</a></li>
+                    <li><a href="#electrical">Electrical & Lighting</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                </ul>
+            </aside>
+
+            <!-- Product Grid Area -->
+            <main class="shop-main">
+                <div class="shop-container" id="shop-container">
+                    <!-- Categories and Products injected by JS -->
+                </div>
+            </main>
+
+        </div>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="transitions.js"></script>
+</body>
+
+</html>

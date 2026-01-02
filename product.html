@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKELO.PK | Product Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,800;1,600&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="product-page">
+
+    <!-- Transition Overlay -->
+    <div class="transition-overlay">
+        <div class="transition-wipe"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Bikelo.pk" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="icon-btn search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg></a>
+                <a href="cart.html" class="icon-btn cart-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="product-details-section">
+        <div class="container">
+            <div class="product-detail-layout">
+                <!-- Left: Image Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image-container">
+                        <img src="" alt="Product Image" id="main-product-img">
+                    </div>
+                </div>
+
+                <!-- Right: Info -->
+                <div class="product-info-col">
+                    <div class="breadcrumb"><a href="shop.html">Shop</a> / <span id="product-category">Category</span>
+                    </div>
+                    <h1 class="product-title" id="product-title">Loading Product...</h1>
+                    <div class="product-price" id="product-price">--</div>
+
+                    <div class="product-description">
+                        <p id="product-desc">Loading description...</p>
+                        <ul class="product-features">
+                            <li>Premium Build Quality</li>
+                            <li>Direct Fitment Replacement</li>
+                            <li>1 Year Manufacturer Warranty</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" id="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="btn btn-primary add-to-cart-hero" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>My Garage</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items injected here -->
+            <div class="empty-cart-msg">Your garage is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">Rs. 0</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="transitions.js"></script>
+</body>
+
+</html>
